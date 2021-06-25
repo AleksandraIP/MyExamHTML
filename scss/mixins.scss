@@ -1,0 +1,30 @@
+@import "variables";
+
+@mixin font($size,$color:white,$weight:400){
+  font-family: 'Open Sans', sans-serif;
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin flex($justify,$direction:row,$align:center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin line ($width, $top, $left){
+  position: absolute;
+  left: $left;
+  top: $top;
+  border-bottom: 3px solid $blue;
+  width: $width;
+}
+
+@mixin name ($size, $color:black, $weight:400){
+  font-family: 'Oswald', sans-serif;
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}

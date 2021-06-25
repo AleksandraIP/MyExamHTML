@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+    <section class="header">
+        <header>
+            <div class="logo">
+                <img src="./image/logo.png" alt="logo">
+                <p>TRANS <br> LIGHT</p>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="about">
+            <p class="big">Светотехническое оборудование <br> в Киеве</p>
+            <p class="small">Продажа, аренда светотехнического оборудования.<br>
+                Оформление официальных мероприятий под ключ.</p>
+            <button><a href="#">ПЕРЕЙТИ</a></button>
+        </div>
+    </section>
+
+    <section class="fist">
+        <div class="main_header">
+            <div class="lines">
+                <p class="line-big"></p>
+                <p class="line-small"></p>
+            </div>
+
+            <p class="name">НАШИ ПРОЭКТЫ</p>
+
+            <div class="slider-nav">
+                <div class="prev">
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <i class="bi bi-chevron-left" aria-hidden="true"></i></a>
+                </div>
+                <div class="next">
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="carousel" class="carousel slide carousel-fade" role="button" data-ride="carousel">
+            <div class="carousel-inner p-2">
+
+                <div class="carousel-item active d-flex position-relative">
+                    <img class="d-block " src="./image/first.png" alt="">
+                    <div class="text1 bg-white position-absolute w-25">
+                        <h2>ССК “ОЛИМП”</h2>
+                        <p>Световое оформление <br> форума “Шубы-2019”</p>
+                    </div>
+                    <img class="d-block " src="./image/second.png" alt="">
+                    <div class="text2 bg-white position-absolute w-25">
+                        <h2>ССК “ОЛИМП”</h2>
+                        <p>Световое оформление <br> форума “Шубы-2019”</p>
+                    </div>
+                </div>
+                <div class="carousel-item d-flex">
+                    <img class="d-block" src="./image/second.png" alt="">
+                    <div class="text1 position-absolute bg-white w-25">
+                        <h2>ССК “ОЛИМП”</h2>
+                        <p>Световое оформление <br> форума “Шубы-2019”</p>
+                    </div>
+                    <img class="d-block" src="./image/first.png" alt="">
+                    <div class="text2 position-absolute bg-white w-25">
+                        <h2>ССК “ОЛИМП”</h2>
+                        <p>Световое оформление <br> форума “Шубы-2019”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="main_header">
+            <div class="lines">
+                <p class="line-big"></p>
+                <p class="line-small"></p>
+            </div>
+
+            <p class="name">КАТАЛОГ ПРОДУКЦИИ</p>
+        </div>
+
+        <div class="slider">
+            <a href="#slide-1">ROBE</a>
+            <a href="#slide-2">COMPULITE</a>
+
+            <div class="slides">
+                <div class="slide-1" id="slide-1">
+                   <div class="one">
+                   <img src="./image/robe1.png" alt="img">
+                   <p class="text1">СТАТИЧНЫЕ <br> СВЕТОДИОДНЫЕ ПИБОРЫ</p>
+                   </div>
+                   <div class="one">
+                   <img src="./image/robe2.png" alt="img">
+                   <p class="text2">КОНТРОЛЕРЫ</p>
+                   </div>
+                   <div class="one">
+                   <img src="./image/robe3.png" alt="img">
+                   <p class="text3">АКСЕССУАРЫ</p>
+                   </div>
+                </div>
+
+                <div class="slide-2" id="slide-2">
+                     <div class="about1">
+                        <h4>СТАТИЧНЫЕ СВЕТОДИОДНЫЕ ПРИБОРЫ</h4>
+                        <p>Прожекторы <br>
+                            Стробоскопы <br>
+                            Пушки <br>
+                            Театральные прожекторы</p>
+                     </div>
+                     <div class="about2">
+                        <h4>КОНТРОЛЛЕРЫ</h4>
+                        <p>Интеллектуальные системы контроля природных факторов, а также в соответствии с возрастом и
+                            полом человека определяющие наиболее благоприятные режимы и интенсивность освещения.</p>
+                    </div>
+                    <div class="about3">
+                        <h4>АКСЕССУАРЫ</h4>
+                        <p>Элементы, которые помогают обеспечить надежную работу светильников, управлять светом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third">
+        <div class="main_header">
+            <div class="lines">
+                <p class="line-big"></p>
+                <p class="line-small"></p>
+            </div>
+
+            <p class="name">АРЕНДА ОБОРУДОВАНИЯ</p>
+        </div>
+      <div class="div">
+        <div class="text">
+          <p>Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.</p>
+        </div>
+
+        <div class="example">
+            <div class="up">
+                <div class="name">
+                    <p>НОВОЕ ОБОРУДОВАНИЕ, ПРЕДОСТАВЛЯЕМОЕ В АРЕНДУ:</p>
+                </div>
+                <div class="slider-nav d-flex">
+                    <div class="prev">
+                        <a class="carousel-control-prev w-50" href="#carousel2" role="button" data-slide="prev">
+                            <i class="bi bi-chevron-left" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="next">
+                        <a class="carousel-control-next w-50" href="#carousel2" role="button" data-slide="next">
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="carousel2" class="carousel slide carousel-fade" role="button" data-ride="carousel">
+                <div class="carousel-inner p-2">
+    
+                    <div class="carousel-item active d-flex">
+                        <img class="d-block w-50 m-2" src="./image/robe4.png" alt="">
+                        
+                        <div class="ul w-50 mt-1">
+                            <p>  ROBE ROBIN PARECT 100</p>
+                            <ul>
+                                <li> Источник света 12 светодиодов RGBW по 15 Вт каждый</li>
+                                <li> Угол раскрытия 7°</li>
+                                <li> В комплекте рассеивающая линза 40°</li>
+                                <li> Потребляемая мощность 200 Вт</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item d-flex">
+                        <img class="d-block w-50 m-2" src="./image/robe2.png" alt="">
+                        
+                        <div class="ul w-50 mt-1">
+                            <p>  ROBE ROBIN PARECT 100</p>
+                            <ul>
+                                <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam.</li>
+                                <li> Lorem, ipsum.</li>
+                                <li> Lorem ipsum dolor sit amet consectetur.</li>
+                                <li> Lorem ipsum dolor sit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+    <section class="fourth">
+        <div class="main_header">
+            <div class="lines">
+                <p class="line-big"></p>
+                <p class="line-small"></p>
+            </div>
+
+            <p class="name">НАШИ ПРОЭКТЫ</p>
+
+            <div class="button">
+                <a href="#"> <p> ВСЕ НОВОСТИ</p> </a>
+            </div>
+
+            <div class="news">
+                <div class="news1">
+                      <img src="./image/img1.png" alt="img">
+                      <div class="text1">
+                          <div class="name1">
+                              <p class="oswald">СЕМИНАР MILOS</p>
+                              <p class="grey">27.01.2019</p>
+                          </div>
+                          <p>Наши сотрудники прошли последний семинар от компании Milos.
+                            Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
+                          <a href="#">Читать полностью...</a>
+                      </div>
+                </div>
+
+                <div class="news2">
+                    <p class="oswald">ВЫСТАВКА PROLIGHT+SOUND NAMM RUSSIA 2016</p>
+                    <p class="small">30 контрактов, тысячи восторженных посетителей...</p>
+                    <div class="text2">
+                        <img src="./image/img2.png" alt="img">
+                        <p class="grey">27.01.2019</p>
+                    </div>
+                </div>
+
+                <div class="news3">
+                    <p class="oswald">СЕМИНАР <br> ROBE</p>
+                    <p class="small">30 января 2017 года наши сотрудники побывали в Берлине..</p>
+                    <div class="text2">
+                        <img src="./image/img3.png" alt="img">
+                        <p class="grey">27.01.2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifth">
+        <div class="contacts">
+            <p>(812) 710-80-25</p>
+            <p>191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p>
+            <p>mail@translight.ru</p>
+        </div>
+        <div class="menu">
+            <ul class="one">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a class="go" href="#">Наши проекты</a></li>
+            </ul>
+            <ul class="two">
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Аренда</a></li>
+                <li><a href="#">Сервисное обслуживание</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>© 2019 ЗАО «Транслайт». Все права защищены.</p>
+            <p>Разработка и дизайн - D-e-n.ru</p>
+        </div>
+    </section>
+
+
+
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/bootstrap.min.css.map"></script>
+    <script src="./script/bootstrap.min.js.map"></script>
+    <script src="./script/main.js"></script>
+
+</body>
+
+</html>

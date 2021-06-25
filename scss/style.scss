@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald&family=Titillium+Web:wght@600&display=swap');
+@import "variables";
+@import "mixins";
+
+*,html,body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  // overflow-x: hidden ;
+}
+
+
+
+
+.header{
+  width: 100%;
+  height: 633px;
+  background: url(../image/fon.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;
+
+  header {
+    width: 100%;
+    background: rgba(0, 91, 193, .6);
+    @include flex (flex-start); 
+    padding: 11px 40px;
+     .logo{
+      @include flex (center);
+      @include font (24px);
+      font-family: 'Titillium Web', sans-serif;
+      text-align: center;
+      margin-right: 34%;
+      img {
+        margin-right: 10px;
+      }      
+     } 
+     .menu ul{
+      @include flex (center);
+       li a{
+        @include font (14px, white, 600);
+        margin-right: 28px;
+       }
+     } 
+  }
+  &:before{
+    content:'';
+    position: absolute;
+    width: 444px;
+    height: 83%;
+    background: rgba(0, 91, 193, .6);
+    top: 110px;
+    left: 350px;
+    
+  }
+  .about{
+    width: 700px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    .big{
+      @include font (48px);
+      font-family: 'Oswald', sans-serif; 
+    }
+    .small{
+      @include font (16px);
+      margin: 40px 0;
+    }
+    button{
+      
+      padding: 15px 40px;
+      background:rgba(0, 91, 193, .2);
+      border: 2px solid white;
+      a{
+        @include font (16px);
+      }
+    }
+  }
+}
+
+.fist{
+  width: 100%;  
+ .main_header{
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    position: relative;
+    @include flex (flex-end);
+    .lines{
+     .line-big{
+      @include line(100px, 170px, 75px);
+     }
+     .line-small{
+      @include line(50px, 183px, 125px);
+     }
+    }
+    .name{     
+     @include name (30px);
+     position: absolute;
+     top: 150px;
+     left: 20%;     
+    }
+    .slider-nav{
+      font-size: 35px; 
+     .prev a{ 
+        width: 50px;
+        height: 60px;
+        margin-top: 150px;
+        margin-left: 90.7%;
+        color: $blue;
+        border: 2px solid $blue;
+        border-right: none; 
+      }  
+     .next a{
+        width: 50px;
+        height: 60px;
+        margin-top: 150px;
+        color: $blue;
+        border: 2px solid $blue;
+      }   
+    }    
+  }
+  .carousel{
+    margin-left: 290px;
+    .d-block{
+      width: 540px;
+      margin-right: 30px;
+    }  
+    .text1{
+      padding: 20px 25px;
+      top: 250px;
+      left: 210px;
+      h2{
+        @include font(18px, black);
+        font-family: 'Oswald', sans-serif;
+        overflow-y: hidden;
+      }
+      p{
+        @include font(14px, black, 300); 
+      }
+    } 
+    .text2{
+      padding: 20px 25px;
+      top: 250px;
+      left: 780px;
+      h2{
+        @include font(18px, black);
+        font-family: 'Oswald', sans-serif;
+        overflow-y: hidden;
+      }
+      p{
+        @include font(14px, black, 300); 
+      }
+    } 
+  }  
+  
+}
+
+.second{
+  width: 100%;
+  .main_header{
+    width: 70%;
+    margin: auto;
+    height: 270px;
+    position: relative;
+    @include flex (flex-end);
+    .lines{
+     .line-big{
+      @include line(100px, 150px, 75px);
+     }
+     .line-small{
+      @include line(50px, 163px, 125px);
+     }
+    }
+    .name{     
+     @include name (30px);
+     position: absolute;
+     top: 133px;
+     left: 20%;     
+    }
+  }
+  .slider{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    a{
+      @include font(24px, black);
+      font-family: 'Oswald', sans-serif;
+      margin: 5px 20px;
+    }
+    a:hover{
+      color: $blue;
+    }
+    .slides{
+      @include flex (center);
+      overflow-x: auto;
+      .slide-1{
+        width: 100%;
+        @include flex(center);
+        position: relative;
+        flex-shrink: 0;
+        
+        .one{
+          margin-top: 30px;
+          img{
+            width: 80%;
+          }
+          .text1{
+            width: 265px;
+            height: 66px;
+            background: $blue;
+            padding: 5px 0 0 15px;
+            text-align: start;
+            @include font(18px);
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 190px;
+            left: 5%;
+          }
+          .text2{
+            width: 265px;
+            height: 66px;
+            background: $blue;
+            padding: 20px 0 0 15px;
+            text-align: start;
+            @include font(18px);
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 190px;
+            left: 38.4%;
+          }
+          .text3{
+            width: 265px;
+            height: 66px;
+            background: $blue;
+            padding: 20px 0 0 15px;
+            text-align: start;
+            @include font(18px);
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 190px;
+            right: 3.5%;
+          }
+        }
+      }
+      .slide-2{
+        width: 100%;
+        @include flex(center);
+        flex-shrink: 0;
+        
+        .about1, .about2, .about3{
+          width: 270px;
+          background: $blue;
+          text-align: start;
+          margin-right: 20px;
+          h4{
+            height: 50px;
+            @include font(18px);
+            font-family: 'Oswald', sans-serif;
+          }
+          p{
+            @include font(14px, white, 300);
+          }
+        }
+        // .about2{
+        //   width: 270px;
+        //   background: $blue;
+        //   text-align: start;
+        //   position: absolute;
+        //   h4{
+        //     height: 50px;
+        //     @include font(18px);
+        //     font-family: 'Oswald', sans-serif;
+        //   }
+        //   p{
+        //     @include font(14px, white, 300);
+        //   }
+        // }
+        // .about3{
+        //   width: 270px;
+        //   background: $blue;
+        //   text-align: start;
+        //   position: absolute;
+        //   h4{
+        //     height: 50px;
+        //     @include font(18px);
+        //     font-family: 'Oswald', sans-serif;
+        //   }
+        //   p{
+        //     @include font(14px, white, 300);
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+.third{
+  width: 100%;
+  margin-top: 70px;
+  .main_header{
+    width: 70%;
+    margin: auto;
+    height: 470px;
+    position: relative;
+    @include flex (flex-end);
+    .lines{
+     .line-big{
+      @include line(100px, 400px, 75px);
+     }
+     .line-small{
+      @include line(50px, 413px, 125px);
+     }
+    }
+    .name{     
+     @include name (30px);
+     position: absolute;
+     top: 283px;
+     left: 20%;     
+    }
+    
+  }
+
+  .div{
+    @include flex(center);
+    .text{
+      width: 300px;
+      margin: 0 95px 0 135px;
+      @include font(18px, black, 300);
+    }
+    .example{
+      width: 665px;
+      height: 425px;
+      border: 2px solid $blue;
+      .up{
+        width: 100%;
+        @include flex(flex-start);
+        position: relative;
+        .name{
+        margin: 40px 16px 13px 30px;
+        @include font(18px, black);
+        font-family: 'Oswald', sans-serif;
+        }
+        .slider-nav{
+          width: 100px;
+          height: 55px;
+          margin: 0 30px;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          font-size: 27px;    
+         .prev a{ 
+            color: $blue;
+            border: 2px solid $blue;
+            border-right: none; 
+            margin-bottom: 3px;
+          }  
+         .next a{
+            color: $blue;
+            border: 2px solid $blue;
+            margin-bottom: 3px;
+          }   
+        }  
+      }
+      .carousel{
+        width: 100%;
+        @include flex(space-between);
+        p{
+          @include font(16px, black);
+          font-family: 'Oswald', sans-serif;
+          margin: 10px 9px;
+        }
+        .ul{
+          margin: 0 15px;
+          ul{            
+            width: 300px;
+            padding: 10px; 
+            list-style-type: disc !important;           
+            li{
+              @include font(14px, black, 300);
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.fourth{
+    width: 100%;
+    .main_header{
+      width: 70%;
+      margin-left: 20%;
+      height: 570px;
+      position: relative;
+      @include flex (flex-end);
+      .lines{
+       .line-big{
+        @include line(100px, 150px, 5px);
+       }
+       .line-small{
+        @include line(50px, 163px, 55px);
+       }
+      }
+      .name{     
+       @include name (30px);
+       position: absolute;
+       top: 133px;
+       left: 14%;     
+      }
+      .button{
+        width: 190px;        
+        background: $blue;
+        position: absolute;
+        top: 130px;
+        right: 0;
+        a{
+        @include font(16px);        
+         p{
+         margin: 15px 34px;
+         }
+        }
+      }
+      .news{
+        @include flex(space-between);
+        position: absolute;
+        top: 270px;
+        right: 0;
+        .news1{
+          width: 50%;        
+          @include flex(space-between);
+          img{
+            width: 60%;
+          }
+          .text1{
+            width: 50%;
+            margin-left: 25px;
+            .name1{
+              @include flex(space-between);
+              margin-bottom: 10px;
+              .oswald{
+                @include font(18px, black);
+                font-family: 'Oswald', sans-serif; 
+              }
+              .grey{
+                @include font(14px, rgba(151, 151, 151, 1), 600);
+              }
+            }
+            p{
+              @include font(14px, black, 300);
+              margin-bottom: 20px;
+            }
+            a{
+              @include font(14px, black);
+            }
+          }
+        }
+        .news2, .news3{
+          width: 22%;
+          .oswald{
+            @include font(18px, black);
+            font-family: 'Oswald', sans-serif; 
+            margin-bottom: 20px;
+          }
+          .small{
+            @include font(14px, black, 300);
+            margin-bottom: 20px;
+          }
+          .text2{
+            @include flex(space-between, row, flex-end);
+            img{
+              width: 65%;
+            }
+            .grey{
+              @include font(14px, rgba(151, 151, 151, 1), 600);
+              margin-bottom: 0;
+            }
+          }
+        }        
+      }
+    }
+}
+
+.fifth{
+  width: 100%;
+  background: $blue;
+  margin-top: 70px;
+  .contacts{
+    width: 75%;
+    @include flex(space-between);
+    @include font(14px, white, 600);
+    margin: 30px 0 0 300px;
+    border-bottom: 2px solid white;
+  }
+  .menu{
+    width: 75%;
+    margin: 30px 0 0 300px;
+    border-bottom: 2px solid white;
+    .one{
+      @include flex(flex-start);
+      li{
+        margin-right: 110px;
+        a{
+         @include font(14px, white, 300);
+        }
+        .go{
+          margin-left: 25px;
+        }
+      }
+    }
+    .two{
+      @include flex(flex-start);
+      li{
+        margin-right: 136px;
+        a{
+         @include font(14px, white, 300);
+        }
+      }
+    }
+  }
+  .footer{
+    width: 75%;
+    @include flex(space-between);
+    @include font(14px, white, 300);
+    margin: 30px 0 0 300px;
+  }
+}
