@@ -187,7 +187,6 @@
     width: 70%;
     margin: auto;
     text-align: center;
-    overflow: hidden;
     a{
       @include font(24px, black);
       font-family: 'Oswald', sans-serif;
@@ -198,8 +197,9 @@
     }
     .slides{
       @include flex (center);
-      overflow-x: auto;
+      overflow-x: hidden;
       .slide-1{
+        margin-left: 100%;
         width: 100%;
         @include flex(center);
         position: relative;
@@ -247,7 +247,9 @@
             right: 3.5%;
           }
         }
+        
       }
+      
       .slide-2{
         width: 100%;
         @include flex(center);
@@ -267,60 +269,32 @@
             @include font(14px, white, 300);
           }
         }
-        // .about2{
-        //   width: 270px;
-        //   background: $blue;
-        //   text-align: start;
-        //   position: absolute;
-        //   h4{
-        //     height: 50px;
-        //     @include font(18px);
-        //     font-family: 'Oswald', sans-serif;
-        //   }
-        //   p{
-        //     @include font(14px, white, 300);
-        //   }
-        // }
-        // .about3{
-        //   width: 270px;
-        //   background: $blue;
-        //   text-align: start;
-        //   position: absolute;
-        //   h4{
-        //     height: 50px;
-        //     @include font(18px);
-        //     font-family: 'Oswald', sans-serif;
-        //   }
-        //   p{
-        //     @include font(14px, white, 300);
-        //   }
-        // }
       }
     }
-  }
+  }  
 }
 
 .third{
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
   .main_header{
     width: 70%;
     margin: auto;
-    height: 470px;
+    height: 200px;
     position: relative;
     @include flex (flex-end);
     .lines{
      .line-big{
-      @include line(100px, 400px, 75px);
+      @include line(100px, 100px, 75px);
      }
      .line-small{
-      @include line(50px, 413px, 125px);
+      @include line(50px, 113px, 125px);
      }
     }
     .name{     
      @include name (30px);
      position: absolute;
-     top: 283px;
+     top: 83px;
      left: 20%;     
     }
     
@@ -496,6 +470,7 @@
     @include flex(space-between);
     @include font(14px, white, 600);
     margin: 30px 0 0 300px;
+    padding-top: 15px;
     border-bottom: 2px solid white;
   }
   .menu{

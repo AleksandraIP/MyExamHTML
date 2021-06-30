@@ -237,7 +237,6 @@
   width: 70%;
   margin: auto;
   text-align: center;
-  overflow: hidden;
 }
 .second .slider a {
   font-family: "Open Sans", sans-serif;
@@ -255,9 +254,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 .second .slider .slides .slide-1 {
+  margin-left: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -348,12 +348,12 @@
 
 .third {
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .third .main_header {
   width: 70%;
   margin: auto;
-  height: 470px;
+  height: 200px;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -363,14 +363,14 @@
 .third .main_header .lines .line-big {
   position: absolute;
   left: 75px;
-  top: 400px;
+  top: 100px;
   border-bottom: 3px solid #005bc1;
   width: 100px;
 }
 .third .main_header .lines .line-small {
   position: absolute;
   left: 125px;
-  top: 413px;
+  top: 113px;
   border-bottom: 3px solid #005bc1;
   width: 50px;
 }
@@ -380,7 +380,7 @@
   font-size: 30px;
   font-weight: 400;
   position: absolute;
-  top: 283px;
+  top: 83px;
   left: 20%;
 }
 .third .div {
@@ -628,6 +628,7 @@
   font-size: 14px;
   font-weight: 600;
   margin: 30px 0 0 300px;
+  padding-top: 15px;
   border-bottom: 2px solid white;
 }
 .fifth .menu {
