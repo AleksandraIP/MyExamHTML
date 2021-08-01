@@ -10,10 +10,19 @@
   border: none;
   outline: none;
   box-sizing: border-box;
-  // overflow-x: hidden ;
+  overflow-x: hidden;
+  // outline: 0;
 }
 
-
+::-webkit-scrollbar{
+  width: 10px;
+  background:$blue;
+}
+::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 50px;
+  box-shadow: inset 1px 1px 10px $blue;
+}
 
 
 .header{
@@ -45,17 +54,19 @@
         @include font (14px, white, 600);
         margin-right: 28px;
        }
-     } 
+    } 
+    .hamburger-menu{
+      display: none;
+    }
   }
   &:before{
     content:'';
     position: absolute;
     width: 444px;
-    height: 83%;
+    height: 82.6%;
     background: rgba(0, 91, 193, .6);
-    top: 110px;
+    top: 17.4%;
     left: 350px;
-    
   }
   .about{
     width: 700px;
@@ -70,8 +81,7 @@
       @include font (16px);
       margin: 40px 0;
     }
-    button{
-      
+    button{      
       padding: 15px 40px;
       background:rgba(0, 91, 193, .2);
       border: 2px solid white;
@@ -109,8 +119,8 @@
      .prev a{ 
         width: 50px;
         height: 60px;
-        margin-top: 150px;
-        margin-left: 90.7%;
+        margin-top: 11.1%;
+        margin-left: 92.6%;
         color: $blue;
         border: 2px solid $blue;
         border-right: none; 
@@ -118,22 +128,22 @@
      .next a{
         width: 50px;
         height: 60px;
-        margin-top: 150px;
+        margin-top: 11.1%;
         color: $blue;
         border: 2px solid $blue;
       }   
     }    
   }
   .carousel{
-    margin-left: 290px;
+    margin-left: 23%;
     .d-block{
       width: 540px;
       margin-right: 30px;
     }  
     .text1{
       padding: 20px 25px;
-      top: 250px;
-      left: 210px;
+      top: 60%;
+      left: 10.7%;
       h2{
         @include font(18px, black);
         font-family: 'Oswald', sans-serif;
@@ -145,8 +155,8 @@
     } 
     .text2{
       padding: 20px 25px;
-      top: 250px;
-      left: 780px;
+      top: 60%;
+      left: 50%;
       h2{
         @include font(18px, black);
         font-family: 'Oswald', sans-serif;
@@ -185,8 +195,8 @@
   }
   .slider{
     width: 70%;
-    margin: auto;
     text-align: center;
+    margin-left: 20%;
     a{
       @include font(24px, black);
       font-family: 'Oswald', sans-serif;
@@ -203,8 +213,7 @@
         width: 100%;
         @include flex(center);
         position: relative;
-        flex-shrink: 0;
-        
+        flex-shrink: 0;        
         .one{
           margin-top: 30px;
           img{
@@ -219,8 +228,8 @@
             @include font(18px);
             font-family: 'Oswald', sans-serif;
             position: absolute;
-            top: 190px;
-            left: 5%;
+            top: 75%;
+            left: 10%;
           }
           .text2{
             width: 265px;
@@ -231,8 +240,8 @@
             @include font(18px);
             font-family: 'Oswald', sans-serif;
             position: absolute;
-            top: 190px;
-            left: 38.4%;
+            top: 75%;
+            left: 43.2%;
           }
           .text3{
             width: 265px;
@@ -243,7 +252,7 @@
             @include font(18px);
             font-family: 'Oswald', sans-serif;
             position: absolute;
-            top: 190px;
+            top: 75%;
             right: 3.5%;
           }
         }
@@ -253,13 +262,13 @@
       .slide-2{
         width: 100%;
         @include flex(center);
-        flex-shrink: 0;
-        
+        flex-shrink: 0;        
         .about1, .about2, .about3{
           width: 270px;
           background: $blue;
           text-align: start;
-          margin-right: 20px;
+          margin-right: 100px;
+          padding: 10px;
           h4{
             height: 50px;
             @include font(18px);
@@ -309,7 +318,7 @@
     }
     .example{
       width: 665px;
-      height: 425px;
+      height: 435px;
       border: 2px solid $blue;
       .up{
         width: 100%;
@@ -344,13 +353,13 @@
       .carousel{
         width: 100%;
         @include flex(space-between);
-        p{
-          @include font(16px, black);
-          font-family: 'Oswald', sans-serif;
-          margin: 10px 9px;
-        }
         .ul{
           margin: 0 15px;
+          p{
+            @include font(16px, black);
+            font-family: 'Oswald', sans-serif;
+            margin: 10px 9px;
+          }
           ul{            
             width: 300px;
             padding: 10px; 
@@ -371,7 +380,7 @@
     .main_header{
       width: 70%;
       margin-left: 20%;
-      height: 570px;
+      height:250px;
       position: relative;
       @include flex (flex-end);
       .lines{
@@ -401,76 +410,76 @@
          }
         }
       }
-      .news{
+    }
+    .news{
+      margin-left: 21%;
+      margin-bottom: 50px;
+      width: 70%;
+      @include flex(center);
+      .news1{
+        width: 50%;        
         @include flex(space-between);
-        position: absolute;
-        top: 270px;
-        right: 0;
-        .news1{
-          width: 50%;        
-          @include flex(space-between);
-          img{
-            width: 60%;
-          }
-          .text1{
-            width: 50%;
-            margin-left: 25px;
-            .name1{
-              @include flex(space-between);
-              margin-bottom: 10px;
-              .oswald{
-                @include font(18px, black);
-                font-family: 'Oswald', sans-serif; 
-              }
-              .grey{
-                @include font(14px, rgba(151, 151, 151, 1), 600);
-              }
-            }
-            p{
-              @include font(14px, black, 300);
-              margin-bottom: 20px;
-            }
-            a{
-              @include font(14px, black);
-            }
-          }
+        margin-right: 50px;
+        img{
+          width: 60%;
         }
-        .news2, .news3{
-          width: 22%;
-          .oswald{
-            @include font(18px, black);
-            font-family: 'Oswald', sans-serif; 
-            margin-bottom: 20px;
-          }
-          .small{
-            @include font(14px, black, 300);
-            margin-bottom: 20px;
-          }
-          .text2{
-            @include flex(space-between, row, flex-end);
-            img{
-              width: 65%;
+        .text1{
+          width: 50%;
+          margin-left: 25px;
+          .name1{
+            @include flex(space-between);
+            margin-bottom: 10px;
+            .oswald{
+              @include font(18px, black);
+              font-family: 'Oswald', sans-serif; 
             }
             .grey{
               @include font(14px, rgba(151, 151, 151, 1), 600);
-              margin-bottom: 0;
             }
           }
-        }        
+          p{
+            @include font(14px, black, 300);
+            margin-bottom: 20px;
+          }
+          a{
+            @include font(14px, black);
+          }
+        }
       }
+      .news2, .news3{
+        margin-right: 50px;
+        width: 22%;
+        .oswald{
+          @include font(18px, black);
+          font-family: 'Oswald', sans-serif; 
+          margin-bottom: 20px;
+        }
+        .small{
+          @include font(14px, black, 300);
+          margin-bottom: 20px;
+        }
+        .text2{
+          @include flex(space-between, row, flex-end);
+          img{
+            width: 65%;
+          }
+          .grey{
+            @include font(14px, rgba(151, 151, 151, 1), 600);
+            margin-bottom: 0;
+          }
+        }
+      }        
     }
 }
 
 .fifth{
   width: 100%;
   background: $blue;
-  margin-top: 70px;
   .contacts{
     width: 75%;
     @include flex(space-between);
     @include font(14px, white, 600);
     margin: 30px 0 0 300px;
-    padding-top: 15px;
     border-bottom: 2px solid white;
   }
   .menu{
