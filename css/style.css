@@ -154,7 +154,7 @@
   width: 50px;
   height: 60px;
   margin-top: 11.1%;
-  margin-left: 92.6%;
+  margin-left: 90.8%;
   color: #005bc1;
   border: 2px solid #005bc1;
   border-right: none;
@@ -167,7 +167,7 @@
   border: 2px solid #005bc1;
 }
 .fist .carousel {
-  margin-left: 23%;
+  margin-left: 20%;
 }
 .fist .carousel .d-block {
   width: 540px;
@@ -176,7 +176,7 @@
 .fist .carousel .text1 {
   padding: 20px 25px;
   top: 60%;
-  left: 10.7%;
+  left: 17.5%;
 }
 .fist .carousel .text1 h2 {
   font-family: "Open Sans", sans-serif;
@@ -195,7 +195,7 @@
 .fist .carousel .text2 {
   padding: 20px 25px;
   top: 60%;
-  left: 50%;
+  left: 65%;
 }
 .fist .carousel .text2 h2 {
   font-family: "Open Sans", sans-serif;
@@ -300,7 +300,7 @@
   font-family: "Oswald", sans-serif;
   position: absolute;
   top: 75%;
-  left: 10%;
+  left: 5%;
 }
 .second .slider .slides .slide-1 .one .text2 {
   width: 265px;
@@ -315,7 +315,7 @@
   font-family: "Oswald", sans-serif;
   position: absolute;
   top: 75%;
-  left: 43.2%;
+  left: 38.3%;
 }
 .second .slider .slides .slide-1 .one .text3 {
   width: 265px;

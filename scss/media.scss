@@ -409,7 +409,7 @@
                     right: -100%;
                     width: 200px;
                     height: 25%;
-                    padding: 60px 0 0 0;
+                    padding: 40px 0 0 0;
                     background: rgba(0, 91, 193, .6);
                     box-shadow: inset 1px 1px 10px white;
                     li a{
@@ -438,7 +438,7 @@
         }
         &:before{
             width: 200px;
-            top: 21%;
+            top: 20.7%;
             left: 180px;
         }
         .about{
@@ -532,7 +532,7 @@
                 .slide-2{
                     .about1, .about2, .about3{
                         h4{
-                            height: 35px;
+                            height: 36px;
                             font-size: 14px;
                         }
                         p{
@@ -662,7 +662,7 @@
                 }
                 ul{
                     width: 130px;
-                    height: 19%;
+                    height: 24%;
                     li a{
                         padding: 0 12px; 
                         font-size: 14px;
@@ -730,27 +730,26 @@
                 .slide-1{
                     .one{
                         .text1{
-                            width: 95px;
-                            height: 40px;
-                            font-size: 9px;
-                            p
+                            width: 105px;
+                            height: 42px;
+                            font-size: 8px;                            
                         }
                         .text2{
-                            width: 95px;
-                            height: 40px;
-                            font-size: 9px;
+                            width: 105px;
+                            height: 42px;
+                            font-size: 8px;
                         }
                         .text3{
-                            width: 95px;
-                            height: 40px;
-                            font-size: 9px;
+                            width: 105px;
+                            height: 42px;
+                            font-size: 8px;
                         }
                     }
                 }
                 .slide-2{
                     .about1, .about2, .about3{
                         h4{
-                            height: 37px;
+                            height: 38px;
                             font-size: 10px;
                         }
                         p{
@@ -759,6 +758,53 @@
                     } 
                 }
             } 
+        }
+    }
+    .third{
+        .main_header{
+            height: 100px;
+            .lines{
+                display: none;
+            }
+            .name{
+                left: 0;
+                top: 30%;
+            }
+        }
+        .div{
+            .example{
+                width: 95%;
+                padding: 10px 0;
+                .up {
+                   .name{
+                       font-size: 14px;
+                    }
+                   .slider-nav {
+                       margin: 0;
+                       top: 5px;
+                   }
+                }
+                .carousel .carousel-inner .carousel-item .d-block{
+                   margin: 20px 0!important; 
+                }
+            }
+        }
+    }
+    .fourth{
+        display: none;
+    }
+    .fifth{
+        margin-top: 20px;
+        .contacts{
+            width: 90%;
+            margin-left: 30px;
+        }
+        .menu{
+            display: none;
+        }
+        .footer{
+            width: 90%;
+            margin-left: 30px; 
         }
     }
 }
